@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Redirecting...
+        </title>
+        </head>
+        <body>
+                <script>
+                    const searchParams = new URLSearchParams(window.location.search);
+                    const redirectUrl = searchParams.get('redirectUrl');
+                    const ltik = searchParams.get('ltik');
+                    window.location.href = `${redirectUrl}/${ltik}`; // Redirect to the URL with the ltik, this can be a project built using React, Angular, Vue, etc.
+                    </script>
+                </body>
+    </html>
+    <!--
+   
+        READ:https://sentry.io/answers/how-to-get-values-from-urls-in-javascript/#:~:text=Getting%20URL%20Query%20Parameters%20in%20the%20Browser&text=You%20can%20use%20the%20getAll,for%20a%20given%20query%20parameter.&text=You%20can%20also%20use%20the,URLSearchParams.keys()
+
+    -->
